@@ -34,12 +34,13 @@ jobs:
   cmake:
     runs-on: windows-latest
     needs: prepare_python
-    - name: Setup cmake
-      uses: jwlawson/actions-setup-cmake@v1.8
-      with:
-        cmake-version: '3.16.x'
-    - name: Use cmake
-      run: cmake --version
+    steps:
+      - name: Setup cmake
+        uses: jwlawson/actions-setup-cmake@v1.8
+        with:
+          cmake-version: '3.16.x'
+      - name: Use cmake
+        run: cmake --version
         
   build:
     runs-on: windows-latest
