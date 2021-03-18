@@ -40,7 +40,8 @@ FOREACH(subdir ${SUBDIRS})
   ADD_SUBDIRECTORY(${subdir})
 ENDFOREACH()
 
-set(PYTHON_DIR C:/tools/Anaconda3/envs/py37_opcv CACHE INTERNAL "solution python install dir")
+#set(PYTHON_DIR C:/tools/Anaconda3/envs/py37_opcv CACHE INTERNAL "solution python install dir")
+set(PYTHON_DIR C:/hostedtoolcache/windows/Python/3.7.9/x64 CACHE INTERNAL "solution python install dir")
 
 set(SOLUTION_DEPENDENCY_DIR ${PYTHON_DIR}/include CACHE INTERNAL "solution denpendency dir")
 set(SOLUTION_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src CACHE INTERNAL "solution source dir")
